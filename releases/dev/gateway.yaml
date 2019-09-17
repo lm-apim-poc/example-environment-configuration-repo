@@ -5,7 +5,7 @@ metadata:
   name: gateway-dev
   namespace: dev
   annotations:
-    flux.weave.works/automated: "true"          # Flux to deploy new gateway image automatically
+    flux.weave.works/automated: "true"          # Flux to deploy new gateway image automatically 11
     flux.weave.works/tag.container: semver:*
 spec:
   releaseName: gateway-dev
@@ -28,7 +28,7 @@ spec:
     replicaCount: 1
     container:
       image: docker.lmpoc.apim.ca/repository/docker-hosted/gateway                                      # Repository name, e.g docker.cluster1.example.com/repository/docker-hosted/gateway
-      tag: '2'                                       # Image tag version, e.g 1.0
+      tag: '3'                                       # Image tag version, e.g 1.0
     imageCredentials:
       name: "gateway-dev"                               # Image credential name, e.g gateway.name-example01
       registry: "docker.lmpoc.apim.ca"                                   # Registry name, e.g docker.cluster1.example.com
