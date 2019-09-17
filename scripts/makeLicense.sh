@@ -1,8 +1,10 @@
 #!/bin/bash
 echo "Usage: ./makeLicense.sh -namespace=default -dest=destination.yaml -license=license.xml"
-
+echo "hi1"
 for ARGUMENT in "$@"
+
 do
+	echo "hi222"
     KEY=$(echo "$ARGUMENT" | cut -f1 -d=)
     VALUE=$(echo "$ARGUMENT" | cut -f2 -d=)
 
